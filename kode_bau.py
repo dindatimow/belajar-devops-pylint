@@ -1,23 +1,12 @@
-import os, sys, math
+"""Modul contoh untuk pengujian Pylint."""
 
-x = 10
 
-def Bad_Function_Name( A, B, C, D, E, F ):
+def hitung_penjumlahan(angka_satu, angka_dua):
+    """Menghitung penjumlahan dua angka."""
+    hasil = angka_satu + angka_dua
+    print(hasil)
+    return hasil
 
- global x
 
- l = 1; O = 0
-
- if A == True:
-
-  if B == False:
-
-   if C == None:
-
-    try: print(eval("A + B")); res = E[0] + F + l + O
-
-    except: pass
-
-  else: return None
-
-Bad_Function_Name(True, False, None, 1, [2], 3)
+if __name__ == "__main__":
+    hitung_penjumlahan(1, 2)
